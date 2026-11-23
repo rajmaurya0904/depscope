@@ -2,7 +2,7 @@
 
 **Scans project dependencies to generate a lightweight architecture dependency matrix and detects unwanted circular layer violations.**
 
-<!-- THE PROBLEM: 2-3 concrete lines on the annoying thing this removes. -->
+Large Python codebases slowly rot as modules quietly import across layer boundaries and tangled circular dependencies make refactoring agonizing. Depscope inspects your import statements statically to map module relationships, flagging forbidden layer leaks and cycle loops before they harden into permanent technical debt.
 
 ## Example
 
