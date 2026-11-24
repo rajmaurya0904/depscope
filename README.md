@@ -8,7 +8,13 @@ Large Python codebases slowly rot as modules quietly import across layer boundar
 
 <!-- A real command and its REAL pasted output. Run it first. -->
 
-## Install
+## Installation
+
+```bash
+pip install depscope
+```
+
+For development or editable install:
 
 ```bash
 pip install -e ".[dev]"
