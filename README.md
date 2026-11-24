@@ -27,7 +27,10 @@ pip install -e ".[dev]"
 
 ## Limitations
 
-<!-- Honest and short: what it does NOT do, known gaps. -->
+- Only analyzes static import statements; dynamic imports (e.g., `importlib.import_module`) are ignored.
+- Works only on packages present in the current environment; it cannot resolve missing or external dependencies.
+- Does not process namespace packages or modules loaded from zip files.
+- Scans files within the project directory only; external libraries are excluded.
 
 ## Development
 
