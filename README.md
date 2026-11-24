@@ -20,7 +20,10 @@ pip install -e ".[dev]"
 
 ## How it works
 
-<!-- 3-6 bullets: what it checks, computes or produces. -->
+- Parses Python files to collect import statements.
+- Builds a directed graph of module dependencies.
+- Detects forbidden layer violations and cycles in the graph.
+- Exports the dependency matrix and cycle report as CSV files.
 
 ## Limitations
 
